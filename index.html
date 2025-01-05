@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eaeaea;
+            padding: 30px;
+        }
+        .container {
+            width: 400px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Currency Converter</h2>
+    <form method="POST">
+        <label for="from_currency">From Currency</label>
+        <select name="from_currency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <!-- Add more currencies as needed -->
+        </select>
+
+        <label for="to_currency">To Currency</label>
+        <select name="to_currency">
+            <option value="EUR">EUR</option>
+            <option value="USD">USD</option>
+            <!-- Add more currencies as needed -->
+        </select>
+
+        <label for="amount">Amount</label>
+        <input type="text" name="amount" required>
+
+        <button type="submit">Convert</button>
+    </form>
+
+    {% if result %}
+    <h3>Converted Amount: {{ result }}</h3>
+    {% endif %}
+</div>
+
+</body>
+</html>
