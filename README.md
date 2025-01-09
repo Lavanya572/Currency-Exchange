@@ -6,3 +6,8 @@ This project is a web-based Currency Exchange application built using Python, HT
 - User-Friendly Interface: Clean and simple design for seamless navigation.
 - Wide Currency Support: Supports conversion between numerous currencies worldwide.
 - Error Handling: Displays appropriate messages for invalid inputs or network issues.
+
+## 🛠️ Technologies Used
+- Frontend: HTML, CSS for layout and styling.
+- Backend: Python for server-side logic.
+- API: Third-party currency exchange API for fetching live rates.
